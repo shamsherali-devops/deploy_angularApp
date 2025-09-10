@@ -14,7 +14,7 @@ jobs:
             with:
               node-version: 20.x
           - name: install dependencies
-            run: npm install --verbose
+            run: npm install --legacy-peer-deps
           - name: build angular app
             run: npm run build
          
