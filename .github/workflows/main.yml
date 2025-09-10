@@ -12,9 +12,9 @@ jobs:
           - name: setup nodejs
             uses: actions/setup-node@v5.0.0
             with:
-              node-version: 22.x
+              node-version: 20.x
           - name: install dependencies
-            run: npm install
+            run: npm install --verbose
           - name: build angular app
             run: npm run build
          
